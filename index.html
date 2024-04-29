@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CatPhotoApp</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <!-- SEO acessibility to use main tag -->
+    <main>
+        <h1>Cat Photo APP</h1>
+        <!-- Adding Section -->
+        <section>
+            <h2>Cat Photos</h2>
+            <!--TODO:Add link to cat photos-->
+            <!-- Cat Imge -->
+            <a href="https://freecatphotoapp.com"><img
+                    src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                    alt="A Cute orange cat lying on its back" /></a>
+            <p>
+                See more<a href="https://freecatphotoapp.com" target="_blank">
+                    cat photos </a>in our gallery
+            </p>
+        </section>
+        <section>
+            <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <!-- Figure for Self continer SEO  -->
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+                    alt="A slice of lasagna on a plate." />
+                <!-- Adding Caption for this photo -->
+                <figcaption>Cats<em> love</em> lasagna.</figcaption>
+            </figure>
+            <h3>Top 3 element cat hate:</h3>
+
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other Cats</li>
+            </ol>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+                    alt="Five cats looking around a field." />
+                <figcaption>Cats <strong>hate</strong> Other cats.</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Cat Form</h2>
+            <form action="https://freecatphotoapp.com/submit-cat-photo">
+                <!--Adding Fieldset elemet to group the input elemnt in a web form  -->
+                <fieldset>
+                    <!-- Legend is the caption of the fieldset -->
+                    <legend>Is your cat in indoor or outdoor cat?</legend>
+                    <!-- Adding Radio Button with label -->
+                    <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked />Indoor</label>
+                    <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor" />Outdoor</label>
+                </fieldset>
+                <fieldset>
+                    <!-- Adding Fieldset Caption -->
+                    <legend>What's your cat's personality?</legend>
+                    <!-- Adding a Check box -->
+                    <input type="checkbox" id="loving" name="personality" value="loving"/> 
+                    <label for="loving">Loving</label>
+                    <!-- Adding Lazy check box -->
+                    <input type="checkbox" id="lazy" name="personality" value="lazy" checked>
+                    <label for="lazy"> Lazy</label>
+                    <input type="checkbox" name="personality" id="enegetic" value="enegetic">
+                    <label for="enegetic">Energetic</label>
+                </fieldset>
+                <input type="text" name="catphotourl" placeholder="Cat Photo URL" required />
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <!-- Adding a Footer -->
+    <footer>
+        <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+</body>
+
+</html>
